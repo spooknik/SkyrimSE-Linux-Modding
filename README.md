@@ -18,6 +18,23 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 ### SKSE64
 0. Prepare to get your hands dirty. We need to manually patch Proton's files in order to make SKSE64 work. The process is basically the same as this [post](https://www.reddit.com/r/SteamPlay/comments/9uro22/fallout_4_how_to_get_fallout_4_script_extender/). Credit to the author.
 1. Download SKSE 64. 
-2. Copy all .dlls and exe to Skyrim folder. **Not Data Folder**. The folder with SkyrimSE.exe. 
+2. Copy all .dlls and .exe to Skyrim folder. **Not Data Folder**. The folder with SkyrimSE.exe. (typical SKSE64 install)
 3. Install bbe. `sudo apt install bbe`
-4. Download and run this script. It will patch your proton. You may need to edit the script to find your install of proton. 
+4. Download and run [this script](https://raw.githubusercontent.com/spooknik/SkyrimSE-Linux-Modding/master/patch_proton.sh). It will patch your proton. You may need to edit the script to find your install of proton. 
+5. Right on Skyrim SE in Steam and Go to `properties`. 
+6. Click `Set Launch Options`
+7. Paste this `xterm -e bash -c "echo Not launching Skyrim SE due to Steam Properties settings. Run \"%command%\" to launch vanilla Skyrim SE; exec bash"` Click Okay.
+8. Launch Skyrim SE.
+9. Xterm should launch. You can now launch SKSE64 and other things from here.
+10. Run command `~/".steam/steam/steamapps/common/Proton 4.2/proton" run skse64_loader.exe` to launch Skyrim SE via SKSE64.
+11. Open console once in game and run `getskseversion`
+12a. If it reports something, then you've suceeded. 
+12b. From Xterm install FAudio Builds again, if needed.
+12c. You can launch Wrye Bash from Xterm to install and setup mods. Then launch SKSE the way outlined above. Your load order will be preserved. 
+13. 
+
+
+## Good To Know
+* So far as I can tell all SKSE plugin mods (.dll) work as they should. Just add them as you normally would. 
+* Audio can be buggy. In Xterm before launching the game, you can run: `winetricks sound=alsa` to try to switch to ALSA sound. Or `winetricks sound=pulseaudio` for Pulse Audio. It may differ from system to system. 
+* No idea if this works in Skyrim VR. Please don't ask. 
