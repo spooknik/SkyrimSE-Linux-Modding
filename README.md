@@ -37,3 +37,4 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 * So far as I can tell all SKSE plugin mods (.dll) work as they should. Just add them as you normally would. 
 * Audio can be buggy. In Xterm before launching the game, you can run: `winetricks sound=alsa` to try to switch to ALSA sound. Or `winetricks sound=pulseaudio` for Pulse Audio. It may differ from system to system. 
 * No idea if this works in Skyrim VR. Please don't ask. 
+* Untested with DynDOLOD and SkyProc. DynDOLOD will probably run okay. Just run it via Xterm. SkyProc will likely involve some trickery with java. 
