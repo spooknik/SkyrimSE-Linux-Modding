@@ -28,10 +28,9 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 9. Xterm should launch. You can now launch SKSE64 and other things from here.
 10. Run command `~/".steam/steam/steamapps/common/Proton 4.2/proton" run skse64_loader.exe` to launch Skyrim SE via SKSE64.
 11. Open console once in game and run `getskseversion`
-12a. If it reports something, then you've suceeded. 
-12b. From Xterm install FAudio Builds again, if needed.
-12c. You can launch Wrye Bash from Xterm to install and setup mods. Then launch SKSE the way outlined above. Your load order will be preserved. 
-13. 
+12. If it reports something, then you've suceeded. 
+13. From Xterm install FAudio Builds again, if needed.
+14. You can launch Wrye Bash from Xterm to install and setup mods. Then launch SKSE the way outlined above. Your load order will be preserved.  
 
 
 ## Good To Know
