@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-cd ~/".steam/steam/steamapps/common/Proton 4.2/dist/lib64/wine/"
+cd ~/".steam/steam/steamapps/common/Proton 3.16/dist/lib64/wine/"
 if [ -f ntdll.dll.so-backup ]; then
    echo "ntdll.dll.so-backup already exists.  Aborting to avoid overwriting it."
    exit 1
