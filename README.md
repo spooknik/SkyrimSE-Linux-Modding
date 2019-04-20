@@ -30,13 +30,13 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 11. Open console once in game and run `getskseversion`
 12. If it reports something, then you've suceeded. 
 13. From Xterm install FAudio Builds again, if needed.
-14. You can launch Wrye Bash from Xterm to install and setup mods. Then launch SKSE the way outlined above. Your load order will be preserved.  
-
+14. You can launch modding programs from Xterm to install and setup mods. `~/".steam/steam/steamapps/common/Proton 4.2/proton" run skse64_loader.exe` or  `~/".steam/steam/steamapps/common/Proton 4.2/proton" run SSEEdit.exe`
 
 ## Good To Know
 * So far as I can tell all SKSE plugin mods (.dll) work as they should. Just add them as you normally would.
 * Audio can be buggy. In Xterm before launching the game, you can run: `winetricks sound=alsa` to try to switch to ALSA sound. Or `winetricks sound=pulseaudio` for Pulse Audio. It may differ from system to system. 
 * No idea if this works in Skyrim VR. Please don't ask. 
-* Untested with DynDOLOD and SkyProc. DynDOLOD will probably run okay. Just run it via Xterm. SkyProc will likely involve some trickery with java. 
+* Untested with DynDOLOD and SkyProc. DynDOLOD will probably run okay since it is based on xEdit which runs fine. Just run it via Xterm. SkyProc will likely involve some trickery with java. 
 * Install FAudio Builds on 4.2-3 fixed the sound problems with NPC voices, but made the audio completely cut out and not come back when going through a loading screen. The fix was to use Proton `3.16` plus its [FAudio Builds](https://github.com/Kron4ek/FAudio-Builds/releases/download/19.02/faudio-19.02.tar.xz). (See Proton [Changelog](https://github.com/ValveSoftware/Proton/wiki/Changelog) + FAudio = 19.02)
 * NPCs voices may stop working again. Just re-run the FAudio Builds script. 
+* Swiching Proton versions is not a good idea. It will likely cause problems because things will be reset. So only run things run one proton version. For example: `~/".steam/steam/steamapps/common/Proton 4.2/proton" run Wrye\ Bash.exe` then `~/".steam/steam/steamapps/common/Proton 4.2/proton" run skse64_loader.exe` **not** `~/".steam/steam/steamapps/common/Proton 4.2/proton" run Wrye\ Bash.exe` then `~/".steam/steam/steamapps/common/Proton 3.16/proton" run skse64_loader.exe`
