@@ -3,7 +3,7 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 
 ### Base Install
 0. Make sure you have [all requirements](https://github.com/ValveSoftware/Proton/wiki/Requirements) fulfilled to use Proton via Steam Play. Proton requires the latest software.
-1. Enable Steam Play via Steam. I am using `4.2-3` for this guide. 
+1. Enable Steam Play via Steam. I am using `4.2-3` but `3.16` also works. 
 2. Download Skyrim SE
 3. Check the game runs. 
 4. Download and run [FAudio Builds](https://github.com/Kron4ek/FAudio-Builds) from terminal. The command will be something like: `WINEPREFIX="/home/[USER]/.steam/steam/steamapps/compatdata/489830" ./wine_setup_faudio.sh` NOTE: In most cases this is required to hear NPC voices in game. If you don't have this problem don't install it. 
@@ -34,7 +34,8 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 
 
 ## Good To Know
-* So far as I can tell all SKSE plugin mods (.dll) work as they should. Just add them as you normally would. 
+* So far as I can tell all SKSE plugin mods (.dll) work as they should. Just add them as you normally would.
 * Audio can be buggy. In Xterm before launching the game, you can run: `winetricks sound=alsa` to try to switch to ALSA sound. Or `winetricks sound=pulseaudio` for Pulse Audio. It may differ from system to system. 
 * No idea if this works in Skyrim VR. Please don't ask. 
 * Untested with DynDOLOD and SkyProc. DynDOLOD will probably run okay. Just run it via Xterm. SkyProc will likely involve some trickery with java. 
+* Install FAudio Builds on 4.2-3 fixed the sound problems with NPC voices, but made the audio completely cut out and not come back when going through a loading screen. The fix was to use Proton `3.16` plus its [FAudio Builds](https://github.com/Kron4ek/FAudio-Builds/releases/download/19.02/faudio-19.02.tar.xz). (See Proton [Changelog](https://github.com/ValveSoftware/Proton/wiki/Changelog) + FAudio = 19.02)
