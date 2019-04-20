@@ -6,7 +6,7 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 1. Enable Steam Play via Steam. I am using `4.2-3` but `3.16` also works. 
 2. Download Skyrim SE
 3. Check the game runs. 
-4. Download and run [FAudio Builds](https://github.com/Kron4ek/FAudio-Builds) from terminal. The command will be something like: `WINEPREFIX="/home/[USER]/.steam/steam/steamapps/compatdata/489830" ./wine_setup_faudio.sh` NOTE: In most cases this is required to hear NPC voices in game. If you don't have this problem don't install it. 
+4. Download and run [FAudio Builds](https://github.com/Kron4ek/FAudio-Builds) from terminal. The command will be something like: `WINEPREFIX="/home/[USER]/.steam/steam/steamapps/compatdata/489830" ./wine_setup_faudio.sh` 
 5. Base Install of Skyrim is finished. Check if everything is working as it should. 
 6. Enjoy the game as vanilla.
 
@@ -39,3 +39,4 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 * No idea if this works in Skyrim VR. Please don't ask. 
 * Untested with DynDOLOD and SkyProc. DynDOLOD will probably run okay. Just run it via Xterm. SkyProc will likely involve some trickery with java. 
 * Install FAudio Builds on 4.2-3 fixed the sound problems with NPC voices, but made the audio completely cut out and not come back when going through a loading screen. The fix was to use Proton `3.16` plus its [FAudio Builds](https://github.com/Kron4ek/FAudio-Builds/releases/download/19.02/faudio-19.02.tar.xz). (See Proton [Changelog](https://github.com/ValveSoftware/Proton/wiki/Changelog) + FAudio = 19.02)
+* NPCs voices may stop working again. Just re-run the FAudio Builds script. 
