@@ -48,3 +48,4 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 * Audio can be buggy. In Xterm before launching the game, you can run: `winetricks sound=alsa` to try to switch to ALSA sound. Or `winetricks sound=pulseaudio` for Pulse Audio. It may differ from system to system.
 * `shift`+`ins` to paste things into xterm
 * Proton will spit out a massive amount of the same error: `ERROR: ld.so: object '/home/steven/.steam/ubuntu12_64/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS64): ignored.`
+* Wrye Bash plays nice with symbolic links. Meaning you can just link all your downloaded mods to Wrye Bash's Bash Installers folder. 
