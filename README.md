@@ -41,6 +41,7 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 * So far as I can tell all SKSE plugin mods (.dll) work as they should. Just add them as you normally would.
 * Untested with DynDOLOD and SkyProc. DynDOLOD will probably run okay since it is based on xEdit which runs fine. Just run it via Xterm. SkyProc will likely involve some trickery with java. 
 * Swiching Proton versions is not a good idea. It will likely cause problems because things will be reset. So only run things run one proton version. For example: `~/".steam/steam/steamapps/common/Proton 4.2/proton" run Wrye\ Bash.exe` then `~/".steam/steam/steamapps/common/Proton 4.2/proton" run skse64_loader.exe` **not** `~/".steam/steam/steamapps/common/Proton 4.2/proton" run Wrye\ Bash.exe` then `~/".steam/steam/steamapps/common/Proton 3.16/proton" run skse64_loader.exe`
+* Sometimes Skyrim will hang on exit. You can `alt` + `tab` out and enter `ctrl` + `c`. This might help. Otherwise in most DE you will eventually get the option to force quit. There's 1 in 5 chance of this happening to me. 
 
 ## Tips and Tricks
 * If NPC voices stop working, just re-run the FAudio Builds script.
