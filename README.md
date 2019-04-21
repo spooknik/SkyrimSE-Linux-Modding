@@ -39,9 +39,10 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 
 ## Good To Know
 * So far as I can tell all SKSE plugin mods (.dll) work as they should. Just add them as you normally would.
-* Untested with DynDOLOD and SkyProc. DynDOLOD will probably run okay since it is based on xEdit which runs fine. Just run it via Xterm. SkyProc will likely involve some trickery with java. 
+* Untested SkyProc. SkyProc will likely involve some trickery with java. 
 * Swiching Proton versions is not a good idea. It will likely cause problems because things will be reset. So only run things run one proton version. For example: `~/".steam/steam/steamapps/common/Proton 4.2/proton" run Wrye\ Bash.exe` then `~/".steam/steam/steamapps/common/Proton 4.2/proton" run skse64_loader.exe` **not** `~/".steam/steam/steamapps/common/Proton 4.2/proton" run Wrye\ Bash.exe` then `~/".steam/steam/steamapps/common/Proton 3.16/proton" run skse64_loader.exe`
 * Sometimes Skyrim will hang on exit. You can `alt` + `tab` out and enter `ctrl` + `c`. This might help. Otherwise in most DE you will eventually get the option to force quit. There's 1 in 5 chance of this happening to me. 
+* At time of writing (April 2019) **DynDOLOD will not full work** under wine. It used a small program called Texconv to build the .dds textures. This program is broken under Wine. You can still use DynDOLOD, but you won't be able to generate tree LOD textures and you need to output everything in R8G8B8/R8G8B8A8. [Bug](https://github.com/Microsoft/DirectXTex/issues/128) with Wine described here. My convsation with sheson is [here.](https://forum.step-project.com/topic/13894-dyndolod-beta-for-skyrim-special-edition-and-skyrim-vr-259/?p=234663). 
 
 ## Tips and Tricks
 * If NPC voices stop working, just re-run the FAudio Builds script.
