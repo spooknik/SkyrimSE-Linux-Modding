@@ -49,3 +49,4 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 * `shift`+`ins` to paste things into xterm
 * Proton will spit out a massive amount of the same error: `ERROR: ld.so: object '/home/steven/.steam/ubuntu12_64/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS64): ignored.`
 * Wrye Bash plays nice with symbolic links. Meaning you can just link all your downloaded mods to Wrye Bash's Bash Installers folder. 
+* For me, Wrye Bash crashes when you try to click and drag plugins in your load order. You can use `ctrl` + `up` or `down` to move plugings around.
