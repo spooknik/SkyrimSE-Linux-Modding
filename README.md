@@ -11,7 +11,7 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 6. Enjoy the game as vanilla.
 
 ### Modding
-1. You can simply copy mods into the data directly and active them in game via the 'mods' button in the main menu. 
+1. You can simply copy mods into the data directly and active them in game via the 'mods' button in the main menu. The game tries to make you sign in when you click the 'mods' bottom but just hit the home key to get to your load order.
 2. Please note that on Linux files and folders are **case sensitive**. Some modders use `textures` or `Textures`. Keep this in mind when installing mods. For consistancy I put everything in lower case folders. Wine/Proton/Linux doesn't seem to care just as long as everything is consistant. 
 3. Wrye Bash is acutally runs very well under wine can be used to install, sorting and activation of mods.
 4. If you don't need or want to run any SKSE64 mods, then you good to go. 
@@ -21,7 +21,7 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 1. [Download](https://skse.silverlock.org/) SKSE 64. 
 2. Copy all .dlls and .exe to Skyrim folder. **Not Data Folder**. The folder with SkyrimSE.exe. (typical SKSE64 install)
 3. Install bbe. `sudo apt install bbe`
-4. Download and run [this script](https://raw.githubusercontent.com/spooknik/SkyrimSE-Linux-Modding/master/patch_proton.sh). It will patch your proton. 
+4. Download and run [this script](https://raw.githubusercontent.com/spooknik/SkyrimSE-Linux-Modding/master/patch_proton.sh). It will patch your proton. Please note, you will have to edit the script if you are not using Proton 3.16.
 5. Right on Skyrim SE in Steam and Go to `properties`. 
 6. Click `Set Launch Options`
 7. Paste this `xterm -e bash -c "echo Not launching Skyrim SE due to Steam Properties settings. Run \"%command%\" to launch vanilla Skyrim SE; exec bash"` Click Okay.
@@ -38,11 +38,11 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 * As far as I can tell there is no advatage to using `4.2-3` in terms of performance or compatibility.
 
 ## Good To Know
-* So far as I can tell all SKSE plugin mods (.dll) work as they should. Just add them as you normally would.
+* So far as I can tell all SKSE plugin mods (.dll) work as they should. Just add them as you normally would. Engine Fixes also works.
 * Untested SkyProc. SkyProc will likely involve some trickery with java. 
 * Swiching Proton versions is not a good idea. It will likely cause problems because things will be reset. So only run things run one proton version. For example: `~/".steam/steam/steamapps/common/Proton 4.2/proton" run Wrye\ Bash.exe` then `~/".steam/steam/steamapps/common/Proton 4.2/proton" run skse64_loader.exe` **not** `~/".steam/steam/steamapps/common/Proton 4.2/proton" run Wrye\ Bash.exe` then `~/".steam/steam/steamapps/common/Proton 3.16/proton" run skse64_loader.exe`
 * Sometimes Skyrim will hang on exit. You can `alt` + `tab` out and enter `ctrl` + `c`. This might help. Otherwise in most DE you will eventually get the option to force quit. There's 1 in 5 chance of this happening to me. 
-* At time of writing (April 2019) **DynDOLOD 2.59 will not fully work** under wine. It used a small program called Texconv to build the .dds textures. This program is broken under Wine. You can still use DynDOLOD, but you won't be able to generate tree LOD textures and you need to output everything in R8G8B8/R8G8B8A8. [Bug](https://github.com/Microsoft/DirectXTex/issues/128) with Wine described here. My convsation with sheson is [here.](https://forum.step-project.com/topic/13894-dyndolod-beta-for-skyrim-special-edition-and-skyrim-vr-259/?p=234663). 
+* At time of writing (April 2019) **DynDOLOD 2.59 will not fully work** under wine. It used a small program called Texconv to build the .dds textures.  This program is broken under Wine. You can still use DynDOLOD, but you won't be able to generate tree LOD textures and you need to output everything in R8G8B8/R8G8B8A8. [Bug](https://github.com/Microsoft/DirectXTex/issues/128) with Wine described here. My convsation with sheson is [here.](https://forum.step-project.com/topic/13894-dyndolod-beta-for-skyrim-special-edition-and-skyrim-vr-259/?p=234663). 
 
 ## Tips and Tricks
 * If NPC voices stop working, just re-run the FAudio Builds script.
