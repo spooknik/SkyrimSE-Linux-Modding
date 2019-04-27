@@ -26,7 +26,7 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 2. Download [skyrim-proton-1.0.1.zip](https://github.com/spooknik/SkyrimSE-Linux-Modding/releases/tag/1.0.1)
 3. Extract & Run `install_proton.sh`
 4. Restart Steam and go to Skyrim SE's properties. 
-5. Click the `Force the use of a specific Steam Play compatibility tool`. Select `Proton 3.16-4 for Skyrim SE` NOTE:  Skyrim SE will now run with a custom local version of Proton that will work with SKSE64. You must use this version for SKSE64 modding
+5. Click the `Force the use of a specific Steam Play compatibility tool`. Select `Proton 3.16-4 for Skyrim SE`. See [image](https://raw.githubusercontent.com/spooknik/SkyrimSE-Linux-Modding/master/Force-Proton.jpg). NOTE:  Skyrim SE will now run with a custom local version of Proton that will work with SKSE64. You must use this version for SKSE64 modding. 
 6. Click `Set Launch Options`
 7. Paste `xterm && echo %command% >/dev/null` NOTE: This is a little trickey to get Steam to launch xTerm when you click Play on the game. You can replace `xterm` with `skse64_loader.exe` to directly launch SKSE64 from Steam.
 8. Play Skyrim SE. A terminal should launch.
