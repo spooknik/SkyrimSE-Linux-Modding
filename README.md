@@ -10,7 +10,7 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 1. Enable Steam Play via Steam. You must use 3.16-4. 
 2. Download Skyrim SE
 3. Check the game runs.
-4. Download [skyrim-se-audio-fix-1.0.1.zip](https://github.com/spooknik/SkyrimSE-Linux-Modding/releases/tag/1.0.1)
+4. Download [skyrim-se-audio-fix-1.0.2.zip](https://github.com/spooknik/SkyrimSE-Linux-Modding/releases/tag/1.0.2)
 5. Run `install_audio.sh` This will patch the audio to work. 
 6. Base Install of Skyrim is finished. Check if everything is working as it should. 
 7. Enjoy the game as vanilla.
@@ -23,7 +23,7 @@ A simple guide to how to get up and running with mods in Skyrim SE on Linux
 
 ### SKSE64
 1. Quit Steam
-2. Download [skyrim-proton-1.0.1.zip](https://github.com/spooknik/SkyrimSE-Linux-Modding/releases/tag/1.0.1)
+2. Download [skyrim-proton-1.0.2.zip](https://github.com/spooknik/SkyrimSE-Linux-Modding/releases/tag/1.0.2)
 3. Extract & Run `install_proton.sh`
 4. Restart Steam and go to Skyrim SE's properties. 
 5. Click the `Force the use of a specific Steam Play compatibility tool`. Select `Proton 3.16-4 for Skyrim SE`. See [image](https://raw.githubusercontent.com/spooknik/SkyrimSE-Linux-Modding/master/Force-Proton.jpg). NOTE:  Skyrim SE will now run with a custom local version of Proton that will work with SKSE64. You must use this version for SKSE64 modding. 
