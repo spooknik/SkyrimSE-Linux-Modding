@@ -1,4 +1,11 @@
 # Skyrim SE Linux Modding Guide
+
+## Video Guides
+[Part 1](https://www.youtube.com/watch?v=BhfTADwgyYA) - Installing Skyrim SE for Liunx via Steam Play
+
+[Part 2](https://youtu.be/fnCbuZY3JIU) - Modding Skyrim SE on Linux
+
+
 A simple guide to how to get up and running with mods in Skyrim SE on Linux 
 
 * [Base Install](#base-install)
