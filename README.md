@@ -1,5 +1,7 @@
 # Skyrim SE Linux Modding Guide
 
+# This guide is partly outdated. It is using an older version of Proton. Many of the issues are fixed by using [GloriousEggroll's builds.](https://github.com/GloriousEggroll/proton-ge-custom/releases)
+
 ## Video Guides
 [Part 1](https://www.youtube.com/watch?v=BhfTADwgyYA) - Installing Skyrim SE for Linux via Steam Play
 
