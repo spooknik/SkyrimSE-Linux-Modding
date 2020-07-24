@@ -2,6 +2,8 @@
 
 # This guide is partly outdated. It is using an older version of Proton. Many of the issues are fixed by using [GloriousEggroll's builds.](https://github.com/GloriousEggroll/proton-ge-custom/releases)
 
+# A nice Reddit user has made a more up to date guide [here](https://www.reddit.com/r/pop_os/comments/hwjc78/pop_os_gaming_skyrim_se_skse64_seedit_and_modding/) for Pop!_OS that includes Vortex Mod Manager. You should be able to follow along on most distros. 
+
 ## Video Guides
 [Part 1](https://www.youtube.com/watch?v=BhfTADwgyYA) - Installing Skyrim SE for Linux via Steam Play
 
